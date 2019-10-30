@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+3.times do 
+    Store.create({name: "Kroger"})
+end
+
+3.times do 
+    List.create({name: "Monday", price: "$3.99", quantity: "100", store_id: 1})
+end 
