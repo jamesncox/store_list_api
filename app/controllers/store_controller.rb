@@ -13,4 +13,12 @@ class StoreController < ApplicationController
         render json: StoreSerializer.new(@store, options), status: 200
     end
 
+    def create
+        @store = Store.create(store_params)
+        options = {
+            include: [:lists]
+        }
+        render json: StoreSerializer.new(@store, options), status: 200
+    end 
+
 end
