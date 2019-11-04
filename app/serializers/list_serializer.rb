@@ -1,5 +1,5 @@
 class ListSerializer
   include FastJsonapi::ObjectSerializer
-  attributes :name, :price, :quantity
+  attributes :item, :price, :quantity
   belongs_to :store
 end
