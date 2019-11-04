@@ -21,4 +21,9 @@ class StoreController < ApplicationController
         render json: StoreSerializer.new(@store, options), status: 200
     end 
 
+    private
+
+    def store_params 
+        params.require(:store).permit(:name)
+    end
 end
