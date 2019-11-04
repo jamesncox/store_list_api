@@ -15,6 +15,8 @@
 # end 
 
 stores = Store.create([{ name: 'Kroger' }, { name: 'Target' }, { name: 'Lucky' }])
-List.create(item: 'Milk', price: 3.99, quantity: 1, store_id: 1, store: stores.first)
-List.create(item: 'Quilt', price: 70.00, quantity: 2, store_id: 2, store: stores[1])
-List.create(item: 'Bomber Jacket', price: 150.69, quantity: 1, store_id: 3, store: stores[2])
+List.create(item: 'Milk', price: 3.99, quantity: 1, store_id: 1)
+List.create(item: 'Quilt', price: 70.00, quantity: 2, store_id: 2)
+List.create(item: 'Bomber Jacket', price: 150.69, quantity: 1, store_id: 3,)
+List.create(item: 'Skinny Jeans', price: 85.99, quantity: 1, store_id: 3,)
+List.create(item: 'Top Gun T-shirt', price: 35.99, quantity: 1, store_id: 3,)
