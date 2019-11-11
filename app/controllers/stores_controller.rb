@@ -1,11 +1,11 @@
 class StoresController < ApplicationController
 
     def index
-        @store = Store.all 
+        @stores = Store.all 
         options = {
             include: [:lists]
         }
-        render json: StoreSerializer.new(@store, options), status: 200
+        render json: StoreSerializer.new(@stores, options), status: 200
     end
 
     def show
