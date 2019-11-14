@@ -17,6 +17,7 @@ class StoresController < ApplicationController
     end
 
     def create
+        # byebug 
         @store = Store.create(store_params)
         options = {
             include: [:lists]
